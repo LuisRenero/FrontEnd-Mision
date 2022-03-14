@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Realizar pedidos pasteleria La paradoja">
+    <title>Pedidos pastelería la paradoja</title>
+    <style>
+        form {
+  margin: 0 auto;
+  width: 500px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 65px;
+  text-align: left;
+}
+
+textarea {
+  font: 1em sans-serif;
+
+  width: 300px;
+  box-sizing: border-box;
+
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+.button {
+  padding-left: 90px;
+}
+
+button {
+  margin-left: .5em;
+}
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+input[type=checkbox]:checked {
+    visibility: visible;
+    position: relative;
+    left: -27px;
+}
+
+p{
+    margin: 0px;
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="assets/Logo Pasteleria Paradoja.png" alt="Logo La Paradoja" height="200" width="200">
+        </a>
+        <nav>
+            <a href="index.html#Sabores">Sabores</a> 
+            <a href="index.html#Adornos">Adornos</a>
+        </nav>
+    </header>
+    
+    <div id="formulario">
+        <form action="index.html" method="get">
+                    <label for="name">Nombre:</label> <br>
+                    <input type="text" id="name" name="client_name"> <br>
+
+                    <label for="phoneNumber">Telefono:</label> <br>
+                    <input type="text" id="phoneNumber" name="client_phoneNumber"> <br>
+
+                    <label for="email">Telefono:</label> <br>
+                    <input type="email" id="email" name="client_email"> <br>
+
+                    <label for="description">Descripción:</label> <br>
+                    <input type="text" id="description" name="cake_description"> <br>
+
+                    <p>Selecciona el sabor que prefieras</p>
+                    <p>Bizcocho</p>
+                    <label for="checkBox1">Chocolate<img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox1" />
+                    <label for="checkBox2">Fresa<img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox2" />
+                    <label for="checkBox3">Vainilla<img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox3" />
+                    <p>Relleno</p>
+                    <p>Mermelada</p>
+                    <label for="checkBox4">Fresa<img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox4" />
+                    <label for="checkBox5">Durazno<img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox5" />
+                    <label for="checkBox6">Zarzamora<img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox6" />
+                    <p>Crema</p>
+                    <label for="checkBox7">Vainilla<img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox7" />
+                    <label for="checkBox8">Frutas<img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox8" />
+                    <label for="checkBox9">Mantequilla<img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox9" />
+                    <label for="checkBox10"><img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox10" />
+                    <label for="checkBox11"><img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox11" />
+
+                    
+                    <p>Adornos</p>
+                    <label for="checkBox12">Drip<img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox12" />
+                    <label for="checkBox13">Marmol<img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox13" />
+                    <label for="checkBox14">SemiCubierto<img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox14" />
+                    <label for="checkBox15">Mensaje<img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox15" />
+                    <label for="checkBox16">Fruta<img src="assets/drip.webp" width="60" height="60"/></label>
+                    <input type="checkbox" id="checkBox16" />
+                    
+                    <p>*Si seleccionaste mensaje escribelo en la descripción</p>
+
+                    <button type="submit">Envíe su pedido</button>
+
+            </ul>
+        </form>
+        <h2>Visitanos</h2>
+        <p><b>Domicilio:</b> Calle siempreviva 742 Springfield <br> 
+        <b>Horario:</b>08:00 - 20:00 <br>
+        <b>Telefono:</b> 5510101010</p>
+    </div>
+</body>
+</html>
