@@ -6,9 +6,9 @@
     text-decoration:none;
     color:cornflowerblue;
     font-weight: 700;
-    font-size:x-large;
+    font-size:xx-large;
     margin:0px;
-    padding-right: 400px;
+    padding-right: 300px;
 }
 
 .link{
@@ -20,15 +20,50 @@
 
 h1{
     font-size:50px;
-    
+}
+
+.column{
+    flex: 50%;
 }
 
 .blue{
     color:#184d8f;
 }
 
+td{
+    
+}
+
 .over{
     position:absolute;
+    border: 2px;
+    border-radius: 2%;
+    left:25%;
+    box-shadow: 2px 2px 15px 3px #184d8f;
+    border-color: #184d8f;
+    background-color: #fff;
+    opacity: 0.85;
+    padding: 12px;
+    width: fit-content;
+}
+
+.logo-vaccine{
+    width: 300px;
+    filter: grayscale(100%);
+    opacity: 0.2;
+    height: 78;
+}
+
+.vaccines{
+    display:flex;
+    align-items: center;    
+    flex-grow: 1;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+table {
+  border-spacing: 50px 10px;
 }
 
 p{
@@ -36,11 +71,25 @@ p{
 }
 
 p.description{
+    flex:50%
+}
 
+p.align-center{
+    text-align: center;
 }
 
 p.gray{
     color:gray;
+}
+
+svg.yellow{
+    border-radius: 100%;
+    box-shadow: 0px 2px 15px 1px goldenrod;
+}
+
+svg.blue{
+    border-radius: 100%;
+    box-shadow: 0px 2px 15px 1px #184d8f;
 }
 
 .container{
@@ -58,7 +107,7 @@ main .container{
 }
 
 
-.izquierda{
+.left{
     padding-left: 10%;
     margin-right:10%;
 }
@@ -71,7 +120,7 @@ main .container{
   overflow: hidden;
   width: 200px;
   height: 100px;
-  ;
+  object-fit: fill;
 }
 
 .derecha img{
@@ -90,8 +139,8 @@ main .container{
     background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
     border-radius: 0.3em;
     color: #fff;
-    height: 2.6em;
-   }
+    opacity: 1;
+}
 
 .nowrap{
     
@@ -101,7 +150,9 @@ main .container{
 .triangle-down {
 	width: 0;
 	height: 0;
-	border-left: 75px solid transparent;
-	border-right: 75px solid transparent;
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
 	border-top: 50px solid #999 ;
+    opacity: 0.3;
+    padding: -30px;
 }
